@@ -24,3 +24,8 @@ a = FirstClass.new("Olga")
 
 #this calls the print_name method on the object
 a.print_name
+
+# Exercise ________________________________________________________________________________________________
+# Create a class called MyCar.
+# When you initialize a new instance or object of the class,
+# allow the user to define some instance variables that tell us the year, color, and model of the car.
