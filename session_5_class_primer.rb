@@ -15,11 +15,11 @@ class FirstClass
 
     #this is an instance method, meaning that it is called through an object: some_object.print_name
     def print_name()
-        puts "My name is #{@name}"
+        puts "The @name is #{@name}"
     end
 end
 
-#here we create a function by calling the new method on the class... this refers to the initialize method we created
+#here we create a new instance of the class by calling the new method on the class
 a = FirstClass.new("Olga")
 
 #this calls the print_name method on the object
