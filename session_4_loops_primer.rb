@@ -1,10 +1,12 @@
-#a loop is a way to repeat blocks of code under certain conditions
-#use the following code as a simple way to do a loop
+#Ruby loops
+# https://www.tutorialspoint.com/ruby/ruby_loops.htm
+#Loops in Ruby are used to execute the same block of code specified number of times.
+
 puts "-----------------------------------------------------------------------"
 puts "-------------------GENERIC LOOP ----------------------------------------"
 puts "-----------------------------------------------------------------------"
 3.times do |i|
-    puts "executing the loop with i: #{i}"
+  puts "executing the loop with i: #{i}"
 end
 
 puts "-----------------------------------------------------------------------"
@@ -18,21 +20,51 @@ puts "-----------------------------------------------------------------------"
 str = "loop demo"
 puts "the string is: #{str}"
 str.each_char do |x|
-    puts x
+  puts x
 end
 
-puts "-----------------------------------------------------------------------"
-puts "------------------- ARRAY LOOP -----------------------------------------"
-puts "-----------------------------------------------------------------------"
 
-#lets do the same for an array
-arr = [4,6,3,2,9]
-p arr
-for k in arr
+puts "------------------------------------------------------------------------------"
+puts "------------------------------ Iterate through array -------------------------"
+puts "------------------------------------------------------------------------------"
+
+#https://www.tutorialspoint.com/ruby/ruby_arrays.htm
+#This will iterate through all the elements:
+#
+array = [1, 2, 3, 4, 5, 6]
+
+puts "Print values with Do loop -----------------------------------------------------------"
+array.each do |x|
+  puts x
+end
+
+puts "Iterate with block of code -----------------------------------------------------------"
+array.each { |x| puts x + 10}
+
+puts "Iterate with for loop -----------------------------------------------------------"
+
+for k in array
     puts k
 end
 
+puts "------------------------------------------------------------------------------"
+puts "------------------------------ Iterate through hash -------------------------"
+puts "------------------------------------------------------------------------------"
+
+#https://www.tutorialspoint.com/ruby/ruby_hashes.htm
+# https://launchschool.com/books/ruby/read/hashes
+#
+months = {"1" => "January", "2" => "February", "3" => "March"}
+months.each do |key, value|
+  puts "The key: #{key}, value: #{value}"
+end
+
+puts "------------------------------------------------------------------------------"
+puts "------------------------------ Exercises -------------------------"
+puts "------------------------------------------------------------------------------"
+
 #there are many different syntax for loops in ruby, especially as you look at more data types
 #learn a few ways to do loops and focus on the concepts
+# https://launchschool.com/books/ruby/read/loops_iterators
 
 #do some practice with loops on arrays below

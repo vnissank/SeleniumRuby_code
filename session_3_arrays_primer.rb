@@ -1,10 +1,12 @@
 puts "-----------------------------------------------------------------------"
 puts "------------------------------ ARRAYS ---------------------------------"
 puts "-----------------------------------------------------------------------"
-#an array is a way to hold data in one object
+# Ruby arrays:
+# https://ruby-doc.org/core-2.4.1/Array.html
+#Arrays are ordered, integer-indexed collections of any object.
 #let's make an array and print it out
 num_arr = [1, 5, 3]
-p num_arr
+puts num_arr
 
 puts "-----------------------------------------------------------------------"
 puts "------------------------------ MIXED ARRAY ----------------------------"
@@ -39,6 +41,7 @@ puts "-----------------------------------------------------------------------"
 #the last index of an array is always at index: length - 1
 last_value = mixed_arr[mixed_arr.length - 1]
 puts "The last value is: #{last_value}"
+
 
 
 puts "---------------------------------------------------------------------------------------"

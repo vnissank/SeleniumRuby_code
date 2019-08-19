@@ -1,4 +1,6 @@
 #Use CamelCase convention to name the class
+# https://launchschool.com/books/oo_ruby/read/classes_and_objects_part1
+
 class FirstClass
 
     #a variable with an '@' means that it is an instance variable, which is specific to this object
@@ -13,12 +15,12 @@ class FirstClass
 
     #this is an instance method, meaning that it is called through an object: some_object.print_name
     def print_name()
-        puts @name
+        puts "My name is #{@name}"
     end
 end
 
 #here we create a function by calling the new method on the class... this refers to the initialize method we created
-a = FirstClass.new("me")
+a = FirstClass.new("Olga")
 
 #this calls the print_name method on the object
 a.print_name

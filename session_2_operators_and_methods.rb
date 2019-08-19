@@ -5,22 +5,28 @@ second_number = 9
 #let's print the numbers
 puts "First number is: #{first_number} | Second number is: #{second_number}"
 
-# --------------------------------------------------------------------------------------
-#  ------------------------ CONDITIONAL OPERATORS --------------------------------------
-# --------------------------------------------------------------------------------------
+puts "--------------------------------------------------------------------------------------"
+puts "------------------------ CONDITIONAL OPERATORS --------------------------------------"
+puts "--------------------------------------------------------------------------------------"
+
+# Ruby operators :
+# https://www.tutorialspoint.com/ruby/ruby_operators.htm
 
 #we can compare numbers with conditional operators, which evaluate statements to true or false
 #examples of operators: >, <, ==
 #use case example:  1 > 4
-#    this would evaluate to false, because 1 is not greater than 4
+#  this would evaluate to false, because 1 is not greater than 4
 
-puts "first number (#{first_number}) > second number (#{second_number}) ? #{first_number > second_number}"
-puts "first number (#{first_number}) = second number (#{second_number}) ? #{first_number == second_number}"
-puts "first number (#{first_number}) = second number (#{second_number}) ? #{first_number < second_number}"
+compared_num = 1 > 4
+puts "Is number 1 > 4 ? #{compared_num}"
 
-# --------------------------------------------------------------------------------------
-#  ------------------------ IF/ELSE STATEMENTS  --------------------------------------
-# --------------------------------------------------------------------------------------
+
+puts " --------------------------------------------------------------------------------------"
+puts "  ------------------------ IF/ELSE STATEMENTS  --------------------------------------"
+puts " --------------------------------------------------------------------------------------"
+
+# ruby if/else statements
+# https://www.tutorialspoint.com/ruby/ruby_if_else.htm
 
 #we can use an if statement to control the flow of the application with values
 #the inner blocks of code in the if statement only happens if the condition applies
@@ -34,18 +40,20 @@ end
 
 #you can compare strings with the '==' operator, just like we can with numbers
 #try to make two strings and compare them with if statements
-#string_1 = 
-#string_2 = 
-#if()
+# string1 = ""
+# string2 = ""
+# if()
 #  puts "strings are equal"
-#else
+# else
 #  puts "strings are not equal"
-#end
+# end
 
-# --------------------------------------------------------------------------------------
-#  ------------------------ WRITING METHODS  --------------------------------------
-# --------------------------------------------------------------------------------------
+puts " --------------------------------------------------------------------------------------"
+puts "  --------------------------- WRITING METHODS  --------------------------------------"
+puts " --------------------------------------------------------------------------------------"
 
+#Ruby methods
+#https://www.tutorialspoint.com/ruby/ruby_methods.htm
 
 #a function can make blocks of code reusable and concise
 #functions can have parameters, or inputs
@@ -63,6 +71,7 @@ def compare_number_values(num1, num2)
 end
 
 #now lets call the function a few times, using different parameters
+puts "function call ------------------------------------------------------"
 compare_number_values(1,2)
 puts "--------------------------------------------------------------------"
 compare_number_values(5,2)
@@ -74,6 +83,8 @@ puts "--------------------------------------------------------------------"
 puts "---------------------------------------------------------------------------------------"
 puts "------------------------------ EXERCISES ----------------------------------------------"
 puts "----------------------------------------------------------------------------------------"
+# Ruby operators :
+# https://www.tutorialspoint.com/ruby/ruby_operators.htm
 
 #now you try make a function that adds two numbers and prints them 
 #NOTE: sum = a + b, given that a and b are numbers

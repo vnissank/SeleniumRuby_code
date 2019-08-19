@@ -37,8 +37,23 @@ puts "--------------------------------------------------------------------------
 puts "------------------------------ EXERCISES -----------------------------------------------"
 puts "----------------------------------------------------------------------------------------"
 
-#there is a string method called capitalize, which returns a copy of the string with the first letter uppercase
-#use the previous section to get the string to be capitalized and print it
+# variables:
+# https://www.tutorialspoint.com/ruby/ruby_variables.htm
+# Strings:
+# https://ruby-doc.org/core-2.4.0/String.html
+# run ruby code online
+# https://www.tutorialspoint.com/execute_ruby_online.php
 
-#capitalized_string = lower_case.capitalize
-#puts "String after being capitalized: " 
+#there is a string method called reverse, which reverses str in place
+#use the str variable to be reversed and print it using the above example
+
+# str = "this is test string"
+# reversed_string = str.reverse
+# puts "String after being reversed: "
+
+# there is a string method called gsub(pattern, replacement), which returns a copy of str with the all occurrences of pattern substituted for the second argument
+# use the str variable to have a replacement and print it using the above example
+
+# str = "this is test string to test a string"
+# replaced_string = str.gsub('string', 'text')
+# puts "String after being partially replaced: "
