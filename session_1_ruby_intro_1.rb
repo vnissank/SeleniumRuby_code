@@ -58,15 +58,20 @@ month = months_hash[:third]
 puts month
 
 
+
 puts "------------------------------ METHODS -----------------------------------------"
 
 # in ruby everything is an object, so the 'dot operator' allows us to call methods on variables
 # string has a method called downcase, so let's use it to make a variable all lowercase
 upper_case = 'STARTED WITH ALL CAPS'
 lower_case = upper_case.downcase
+
 # Note that a variable can be inserted into a string with this syntax: "a variable: #{variable_name}"
 puts "String before any changes: #{upper_case}"
 puts "String after the downcase method: #{lower_case}"
+# escape characters
+puts("This string has a double quote: \". It is escaped")
+puts("Double-quote strings allow escaped characters such as \n for newline, \t for tab, etc.")
 
 search_string = 'all'
 flag = lower_case.include?(search_string)
@@ -105,6 +110,7 @@ puts "The sum of num1 and num2 is #{num1.to_i + num2.to_i}"
 
 # variables:
   # https://www.tutorialspoint.com/ruby/ruby_variables.htm
+# https://www.w3resource.com/ruby/ruby-literals.php
 
 # Strings:
   # https://ruby-doc.org/core-2.4.0/String.html
