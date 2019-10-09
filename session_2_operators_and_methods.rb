@@ -54,6 +54,8 @@ puts "Is number 1 > 4 ? #{compared_num}"
 puts 'cat'.eql?('cat')
 puts 'cat'.eql?('dog')
 
+# TODO - move to separate file Statements
+
 puts "  ------------------------ IF/ELSE STATEMENTS  --------------------------------------"
 
 first_number = 1
@@ -98,7 +100,7 @@ else
   puts '|| condition not met'
 end
 
-
+# TODO Move to separate file Methods
 
 puts "  --------------------------- WRITING METHODS  --------------------------------------"
 

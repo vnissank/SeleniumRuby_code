@@ -6,7 +6,11 @@
   of code
 =end
 
-puts "------------------------------ VARIABLES --------------------------------------"
+# Difference between double quotes and single quotes in outputting text, escape characters
+puts("This string has a double quote: \"text in quotes\". It is escaped")
+puts("Double-quote strings allow escaped characters such as \n for newline, \t for tab, etc.")
+puts('Single-quote strings do not allow escaped characters such as \n for newline, \t for tab, etc.')
+puts "------------------------------ VARIABLE TYPES --------------------------------------"
 
 puts 'string variable----------'
 first_variable = 'first string'
@@ -38,14 +42,15 @@ flag = true
 puts flag
 
 puts 'Array---------'
-arr = ["a", 1, "b", 2]
+#Ruby arrays are ordered, integer-indexed collections of any object.
+arr = [0, 1, 2, 3]
 puts arr
-puts'------'
 puts arr[1]
 
 puts 'Hashes---------'
-months_hash = {'1' => 'January', '2' => "February", '3' => "March"}
-month = months_hash["1"]
+#A Hash is a collection of key-value pairs. Keys should be unique
+months_hash = {'01' => 'January', '02' => 'February', '03' => 'March'}
+month = months_hash['01']
 puts month
 
 months_hash = {1 => 'January', 2 => 'February', 3 => 'March'}
@@ -53,8 +58,8 @@ month = months_hash[2]
 puts month
 
 puts 'Symbols---------'
-months_hash = {:first => 'January', :second => 'February', :third => 'March'}
-month = months_hash[:third]
+months_hash = {:january => '01', :february => '02', :march => '03'}
+month = months_hash[:march]
 puts month
 
 
@@ -69,9 +74,7 @@ lower_case = upper_case.downcase
 # Note that a variable can be inserted into a string with this syntax: "a variable: #{variable_name}"
 puts "String before any changes: #{upper_case}"
 puts "String after the downcase method: #{lower_case}"
-# escape characters
-puts("This string has a double quote: \". It is escaped")
-puts("Double-quote strings allow escaped characters such as \n for newline, \t for tab, etc.")
+
 
 search_string = 'all'
 flag = lower_case.include?(search_string)
@@ -93,6 +96,7 @@ c = num4.class
 puts "num4 is #{c} #{insp}"
 puts num4 + 3
 
+#TODO - move to Extras
 puts "------------------------------ EXCEPTIONS -----------------------------------------"
 
 num1 = 3

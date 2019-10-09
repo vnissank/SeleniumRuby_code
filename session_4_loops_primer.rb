@@ -51,20 +51,21 @@ puts "--------------------------------------------------------------------------
 puts "------------------------------ Iterate through hash -------------------------"
 puts "------------------------------------------------------------------------------"
 
-#https://www.tutorialspoint.com/ruby/ruby_hashes.htm
-# https://launchschool.com/books/ruby/read/hashes
-#
+
 months = {"1" => "January", "2" => "February", "3" => "March"}
 months.each do |key, value|
   puts "The key: #{key}, value: #{value}"
 end
 
+puts "-------------------------------Reference------------------------------------------------"
+#there are many different syntax for loops in ruby, especially as you look at more data types
+#learn a few ways to do loops and focus on the concepts
+# https://launchschool.com/books/ruby/read/loops_iterators
+
 puts "------------------------------------------------------------------------------"
 puts "------------------------------ Exercises -------------------------"
 puts "------------------------------------------------------------------------------"
 
-#there are many different syntax for loops in ruby, especially as you look at more data types
-#learn a few ways to do loops and focus on the concepts
-# https://launchschool.com/books/ruby/read/loops_iterators
+
 
 #do some practice with loops on arrays below
