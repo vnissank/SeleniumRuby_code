@@ -22,23 +22,22 @@ compare_number_values(5,2)
 puts "------------------------------"
 compare_number_values(5,5)
 
-puts 'Create function that returns 2 values'
-def find_person(name)
-  country_hash = {Olga: 'USA', Sunder: 'Canada', Vishnu: 'India'}
-  age_hash = {Olga: 40, Sunder: 35, Vishnu: 30}
-  name_symbol = name.to_sym
+puts 'Create function that returns 2 values --------------------------------------------------'
+def find_person(name, country_hash, age_hash)
+  name_symbol = name.downcase.to_sym
   country = country_hash[name_symbol]
   age = age_hash[name_symbol]
   return country, age
 end
-puts 'Call the function and assign the result to one variable'
+puts 'Call the function and assign the result to one variable---------------------------------'
+country_h = { olga: 'USA', sunder: 'Canada', vishnu: 'India' }
+age_h = { olga: 40, sunder: 35, vishnu: 30 }
 first_name = 'Olga'
-info = find_person(first_name)
+info = find_person(first_name, country_h, age_h)
 puts info.inspect
-puts 'Call the function use parallel variable assignment'
-c, a = find_person(first_name)
-puts "The country for #{first_name} is #{c} and age is #{a}"
-
+puts 'Call the function use parallel variable assignment---------------------------------------'
+country_info, age_info = find_person(first_name, country_h, age_h)
+puts "The country for #{first_name} is #{country_info} and age is #{age_info}"
 
 puts "-------------------------------Reference------------------------------------------------"
 # Ruby operators :

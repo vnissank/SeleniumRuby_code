@@ -59,11 +59,7 @@ puts "-------------------------------Reference----------------------------------
 # https://www.tutorialspoint.com/ruby/ruby_operators.htm
 # https://www.w3resource.com/ruby/ruby-operators-precedence.php
 # https://www.rubyguides.com/2018/07/ruby-operators/
-#
-#
-# #Ruby methods
-# #https://www.tutorialspoint.com/ruby/ruby_methods.htm
-#
+
 # run ruby code online
 # https://paiza.io/en/languages/ruby
 

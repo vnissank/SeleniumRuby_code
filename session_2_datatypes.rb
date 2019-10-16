@@ -2,7 +2,6 @@ puts "------------------------------ DATA TYPES --------------------------------
 
 puts 'string variable----------'
 first_variable = 'first string'
-
 #print the variable
 puts first_variable
 
@@ -22,7 +21,8 @@ puts sum
 puts 'Constants-----------------'
 VAR1 = 100
 VAR2 = 200
-puts VAR1 + VAR2
+puts VAR1
+puts VAR2
 
 puts 'Null---------------------'
 a = nil
@@ -88,7 +88,17 @@ puts object_inspect
 # https://www.w3resource.com/ruby/ruby-literals.php
 
 # Strings:
-# https://ruby-doc.org/core-2.5.5/String.html
+# https://ruby-doc.org/core-2.5.5/String.html#
+
+# Symbols:
+# https://ruby-doc.org/core-2.5.0/Symbol.html
+# https://launchschool.com/books/ruby/read/basics#symbols
+
+# Arrays:
+# https://ruby-doc.org/core-2.5.0/Array.html
+
+# Hash
+# https://ruby-doc.org/core-2.5.0/Hash.html
 
 # Exceptions:
 # https://www.tutorialspoint.com/ruby/ruby_exceptions.htm
@@ -99,14 +109,14 @@ puts object_inspect
 
 puts "------------------------------ EXERCISES -----------------------------------------------"
 
-#Convert the number with floating decimal point to string and output the class and value
+# Convert the number with floating decimal point to string and output the class and value
 # dec = 1234567.89
 # str = dec.to_s
 # str_class = str.class
 # puts "str value is #{str} and class is #{str_class}"
 
-#Create a hash "team_members" , use names as keys and age as values.
-# Get the age of one specific team memmber and ouput it.
+# Create a hash "team_members" , use names as keys and age as values.
+# Get the age of one specific team member and output it.
 # team_members = {'Olga' => '45', 'Abbas' => '40', 'Sunder' => '35'}
 # olga_age = team_members['Olga']
 # puts olga_age

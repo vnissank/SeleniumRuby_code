@@ -42,16 +42,34 @@ else
   puts '|| condition not met'
 end
 
+puts "  ------------------------ CASE STATEMENT  --------------------------------------"
+
+my_number = 21
+
+case my_number
+when 1..20
+  puts "Between 1 & 20"
+when 21..40
+  puts "Between 21 & 40"
+else
+  puts "Not within a valid range"
+end
+
+# In this case used Range, which represents an interval, a set of values with a beginning and an end.
+
 puts "-------------------------------Reference------------------------------------------------"
 # Ruby operators :
 # https://www.tutorialspoint.com/ruby/ruby_operators.htm
 # https://www.w3resource.com/ruby/ruby-operators-precedence.php
 # https://www.rubyguides.com/2018/07/ruby-operators/
 #
-# # ruby if/else statements
-# # https://www.tutorialspoint.com/ruby/ruby_if_else.htm
+# ruby if/else statements:
+# https://www.tutorialspoint.com/ruby/ruby_if_else.htm
+# https://launchschool.com/books/ruby/read/flow_control#conditionals
 
-#
+# Range:
+# https://ruby-doc.org/core-2.5.0/Range.html
+
 # run ruby code online
 # https://paiza.io/en/languages/ruby
 

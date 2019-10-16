@@ -28,6 +28,9 @@ puts your_price
 
 #-------------------------------Reference------------------------------------------------"
 
+# Methods:
+# https://launchschool.com/books/ruby/read/methods#whataremethodsandwhydoweneedthem
+
 # variables:
 # https://www.tutorialspoint.com/ruby/ruby_variables.htm
 # https://www.w3resource.com/ruby/ruby-literals.php
