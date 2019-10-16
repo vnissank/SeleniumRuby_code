@@ -50,9 +50,7 @@ puts "-------------------------------Reference----------------------------------
 #
 # # ruby if/else statements
 # # https://www.tutorialspoint.com/ruby/ruby_if_else.htm
-#
-# #Ruby methods
-# #https://www.tutorialspoint.com/ruby/ruby_methods.htm
+
 #
 # run ruby code online
 # https://paiza.io/en/languages/ruby

@@ -2,19 +2,14 @@
 # https://www.tutorialspoint.com/ruby/ruby_loops.htm
 #Loops in Ruby are used to execute the same block of code specified number of times.
 
-puts "-----------------------------------------------------------------------"
 puts "-------------------GENERIC LOOP ----------------------------------------"
-puts "-----------------------------------------------------------------------"
 3.times do |i|
   puts "executing the loop with i: #{i}"
 end
 
-puts "-----------------------------------------------------------------------"
 puts "-------------------STRING LOOP ----------------------------------------"
-puts "-----------------------------------------------------------------------"
 
 #loops are very useful in combination with strings, arrays and other data types
-
 #lets make a loop that iterates over the letters of a string, and prints out each
 
 str = "loop demo"
@@ -23,10 +18,7 @@ str.each_char do |x|
   puts x
 end
 
-
-puts "------------------------------------------------------------------------------"
 puts "------------------------------ Iterate through array -------------------------"
-puts "------------------------------------------------------------------------------"
 
 #https://www.tutorialspoint.com/ruby/ruby_arrays.htm
 #This will iterate through all the elements:
@@ -47,9 +39,7 @@ for k in array
     puts k
 end
 
-puts "------------------------------------------------------------------------------"
 puts "------------------------------ Iterate through hash -------------------------"
-puts "------------------------------------------------------------------------------"
 
 
 months = {"1" => "January", "2" => "February", "3" => "March"}

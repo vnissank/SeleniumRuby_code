@@ -1,4 +1,4 @@
-puts "------------------------------ VARIABLE TYPES --------------------------------------"
+puts "------------------------------ DATA TYPES --------------------------------------"
 
 puts 'string variable----------'
 first_variable = 'first string'
@@ -6,33 +6,41 @@ first_variable = 'first string'
 #print the variable
 puts first_variable
 
-puts 'numbers-----------'
+puts 'numbers------------------'
 num1 = 3
 num2 = 4
 sum = num1 + num2
 puts sum
 
-puts 'Constants-----------'
+puts 'decimals------------------'
+
+dec1 = 3.5
+dec2 = 4.20
+sum = dec1 + dec2
+puts sum
+
+puts 'Constants-----------------'
 VAR1 = 100
 VAR2 = 200
 puts VAR1 + VAR2
 
-puts 'Null-----------'
+puts 'Null---------------------'
 a = nil
 puts a.inspect
 a = 5
 puts a
 
-puts 'Boolean--------'
+puts 'Boolean------------------'
 flag = false
 puts flag
 flag = true
 puts flag
 
-puts 'Array---------'
+puts 'Array----------------------'
 #Ruby arrays are ordered, integer-indexed collections of any object.
 arr = [0, 1, 2, 3]
 puts arr
+puts arr.inspect
 puts arr[1]
 
 puts 'Hashes---------'
@@ -55,14 +63,23 @@ puts month
 puts "------------------------------ CONVERSION OF TYPES -----------------------------------------"
 
 str4 = '4'
-c = str4.class
-insp = str4.inspect
-puts "str4 is #{c} #{insp}"
+object_class = str4.class
+object_inspect = str4.inspect
+puts object_class
+puts object_inspect
+
 num4 = str4.to_i
-insp = num4.inspect
-c = num4.class
-puts "num4 is #{c} #{insp}"
+object_class = num4.class
+object_inspect = num4.inspect
+puts object_class
+puts object_inspect
 puts num4 + 3
+
+dec4 = num4.to_f
+object_class = dec4.class
+object_inspect = dec4.inspect
+puts object_class
+puts object_inspect
 
 #-------------------------------Reference------------------------------------------------"
 
@@ -71,7 +88,7 @@ puts num4 + 3
 # https://www.w3resource.com/ruby/ruby-literals.php
 
 # Strings:
-# https://ruby-doc.org/core-2.4.0/String.html
+# https://ruby-doc.org/core-2.5.5/String.html
 
 # Exceptions:
 # https://www.tutorialspoint.com/ruby/ruby_exceptions.htm
@@ -82,4 +99,15 @@ puts num4 + 3
 
 puts "------------------------------ EXERCISES -----------------------------------------------"
 
-#TODO add excercise
+#Convert the number with floating decimal point to string and output the class and value
+# dec = 1234567.89
+# str = dec.to_s
+# str_class = str.class
+# puts "str value is #{str} and class is #{str_class}"
+
+#Create a hash "team_members" , use names as keys and age as values.
+# Get the age of one specific team memmber and ouput it.
+# team_members = {'Olga' => '45', 'Abbas' => '40', 'Sunder' => '35'}
+# olga_age = team_members['Olga']
+# puts olga_age
+

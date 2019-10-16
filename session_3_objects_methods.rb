@@ -2,6 +2,7 @@ puts "------------------------------ ACCESSING METHODS OF OBJECTS --------------
 
 # in ruby everything is an object, so the 'dot operator' allows us to call methods on those objects
 # string has a method called downcase, so let's use it to make a variable all lowercase
+puts 'downcase ----------------------------------------------'
 upper_case = 'STARTED WITH ALL CAPS'
 lower_case = upper_case.downcase
 
@@ -9,14 +10,21 @@ lower_case = upper_case.downcase
 puts "String before any changes: #{upper_case}"
 puts "String after the downcase method: #{lower_case}"
 
-
+puts 'Search for a string within a string--------------------'
 search_string = 'all'
 flag = lower_case.include?(search_string)
 puts "The string '#{search_string}' exists in string '#{lower_case}' - #{flag}"
 
+puts 'Split the string into array ---------------------------'
 arr_str = lower_case.split
 puts arr_str
 puts "The second word in '#{lower_case}' is '#{arr_str[1]}'"
+
+puts'Format the string to include the value with 2 decimals ----------------------------------------'
+price = 78.5431
+puts "The price is %0.2f dollars" % [price]
+your_price = "$%0.2f" % [price]
+puts your_price
 
 #-------------------------------Reference------------------------------------------------"
 
@@ -25,8 +33,11 @@ puts "The second word in '#{lower_case}' is '#{arr_str[1]}'"
 # https://www.w3resource.com/ruby/ruby-literals.php
 
 # Strings:
-# https://ruby-doc.org/core-2.4.0/String.html
+# https://ruby-doc.org/core-2.5.5/String.html
 
+#Strings formatting:
+#https://www.rubyguides.com/2012/01/ruby-string-formatting/
+#
 # Exceptions:
 # https://www.tutorialspoint.com/ruby/ruby_exceptions.htm
 # https://www.honeybadger.io/blog/ruby-exception-vs-standarderror-whats-the-difference/

@@ -60,8 +60,6 @@ puts "-------------------------------Reference----------------------------------
 # https://www.w3resource.com/ruby/ruby-operators-precedence.php
 # https://www.rubyguides.com/2018/07/ruby-operators/
 #
-# # ruby if/else statements
-# # https://www.tutorialspoint.com/ruby/ruby_if_else.htm
 #
 # #Ruby methods
 # #https://www.tutorialspoint.com/ruby/ruby_methods.htm
@@ -71,24 +69,14 @@ puts "-------------------------------Reference----------------------------------
 
 puts "------------------------------ EXERCISES ----------------------------------------------"
 #you can compare strings with the '==' operator, just like we can with numbers
-#assign two strings to variables and compare them with if statement
+#assign two strings to variables and compare them with if statement. Print out the boolean value of comparison
 
 # string1 = ""
 # string2 = ""
-# if()
-#  puts "strings are equal"
-# else
-#  puts "strings are not equal"
-# end
+# puts string1 == string2
 
 
-#now you try make a function that adds two numbers a and b and prints them
-#given that a and b are numbers
 
-#def add_numbers(a,b)
-#  
-#  
-#end
 
-#now call the functions a few times with different inputs
+
 
