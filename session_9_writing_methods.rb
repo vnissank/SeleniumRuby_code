@@ -56,7 +56,7 @@ puts "-------------------------------Reference----------------------------------
 
 puts "------------------------------ EXERCISES ----------------------------------------------"
 
-#now you try make a function that adds two numbers a and b and prints them
+#1. now you try make a function that adds two numbers a and b and prints them
 #given that a and b are numbers
 
 #def add_numbers(a,b)
@@ -64,4 +64,4 @@ puts "------------------------------ EXERCISES ---------------------------------
 #
 #end
 
-#now call the functions a few times with different inputs
+#2. now call the functions a few times with different inputs

@@ -1,7 +1,3 @@
-# frozen_string_literal: true
-
-# Use CamelCase convention to name the class
-# TODO Olga add mathematical operation method
 
 class MyClass
   def get_date
