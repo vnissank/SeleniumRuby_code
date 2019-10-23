@@ -30,7 +30,6 @@ class RetireSmart
 
   driver.quit
 
-
 end
 
 RetireSmart.new('https://www.massmutual.com/mmfunds/', 'C:\BB\ruby_primer\Download')
