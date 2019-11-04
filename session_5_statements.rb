@@ -44,7 +44,7 @@ end
 
 puts "  ------------------------ CASE STATEMENT  --------------------------------------"
 
-my_number = 21
+my_number = 22
 
 case my_number
 when 1..20
@@ -56,6 +56,18 @@ else
 end
 
 # In this case used Range, which represents an interval, a set of values with a beginning and an end.
+
+user = 'home office'
+case user
+when 'home office'
+  puts "User has full access"
+when 'external'
+  puts "User has partial access"
+when 'temporary'
+  puts "User has no access"
+else
+  puts "Not a valid user"
+end
 
 puts "-------------------------------Reference------------------------------------------------"
 # Ruby operators :

@@ -1,14 +1,5 @@
 require 'date'
 
-d= Date.new(2008,12,31)
-c= d.strftime('%m/%d/%Y')
-seed_date = d
-month_back_date = seed_date >> -1
-
-empl_date = Date.strptime('10/14/1974','%m/%d/%Y')
-year_of_elig = empl_date.year
-
-
 
 module DateSupport
 

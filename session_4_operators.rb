@@ -51,8 +51,8 @@ puts 14.0 >= 14
 compared_num = 1 > 4
 puts "Is number 1 > 4 ? #{compared_num}"
 
-puts 'cat'.eql?('cat')
-puts 'cat'.eql?('dog')
+puts 'cat'=='cat'
+puts 'cat'=='dog'
 
 puts "-------------------------------Reference------------------------------------------------"
 # Ruby operators :
