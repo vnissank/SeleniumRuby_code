@@ -73,6 +73,8 @@ cust2.display_details
 puts '-------------------------------Reference------------------------------------------------'
 # https://launchschool.com/books/oo_ruby/read/classes_and_objects_part1
 # https://launchschool.com/books/ruby/read/variables#typesofvariables
+# Dates:
+# https://www.shortcutfoo.com/app/dojos/ruby-date-format-strftime/cheatsheet
 
 # Exercise ________________________________________________________________________________________________
 # Make a class called FirstClass.
