@@ -2,7 +2,7 @@ require "./extras/web_support"
 require "./extras/pdf_support"
 require "./extras/file_helper"
 
-class RetireSmart
+#class RetireSmart
   include WebSupport
   include FileHelper
   include PdfSupport
@@ -70,6 +70,6 @@ class RetireSmart
 
   driver.quit
 
-end
+#end
 
 

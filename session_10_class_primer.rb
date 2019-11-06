@@ -94,6 +94,6 @@ puts '-------------------------------Reference----------------------------------
 #   end
 # end
 #
-# my_object = FirstClass.new('Olga') # try with Hello World
+# my_object = FirstClass.new('World') # try with Hello World
 #
 # my_object.print_greeting

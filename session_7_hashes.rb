@@ -1,6 +1,5 @@
 
 puts '-------------------------------HASHES----------------------------------------------------------------------------'
-#months = {"01" => "January", "02" => "February", "03" => "March", "04" => "April"}
 
 puts "create months hash with default value 'any month'"
 months = Hash.new("any month")
@@ -13,14 +12,19 @@ months["04"] = "April"
 puts 'Get the value of key 01'
 first_month = months["01"]
 puts first_month
+puts 'Output all keys in hash'
 keys = months.keys
 puts keys
-no_key = months["07"]
+puts 'Access the key that is not in hash'
+no_key = months["05"]
 puts no_key
+puts 'Add key 05'
 months["05"] = "May"
 puts months.inspect
+puts 'Delete key 05'
 months.delete("05")
 puts months.inspect
+puts 'Get the key of value February'
 key_feb = months.key("February")
 puts key_feb
 
@@ -55,20 +59,16 @@ puts '-------------------------------Reference----------------------------------
 
 puts '------------------------------ EXERCISES ----------------------------------------------'
 
-# Exercise1.
-# Create an array and print out the first and last elements
-# my_array = Array[1,2,3,4,5,6,7]
-# first = my_array[0]
-# last = my_array[-1]
-# puts "The first value is: #{first}"
-# puts "The last value is: #{last}"
+# Exercise.
+# There is invert() function that returns a new hash created by using hash's values as keys, and the keys as values.
+# Use the given hash below to flip the keys and values.
+# output the value for 'dos' key
+#
+# my_hash = { :one => 'uno', :two => 'dos', :three => 'tres' }
+# new_hash =
+# puts "the value for 'dos' key is #{}"
 
-# Exercise2.
-# Given the array of names with question marks at the end.
-# names = Array['Peter?', 'Olga?', 'Sunder?', 'Len?']
-# # Remove question mark from each name using Array.new with block of code. Should be one line of code.
-# Array.new(names.length) { |e| names[e] = names[e].delete!'?' }
-# puts names.inspect
+
 
 
 

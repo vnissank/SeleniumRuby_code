@@ -43,9 +43,8 @@ else
 end
 
 puts "  ------------------------ CASE STATEMENT  --------------------------------------"
-
+# In this case used Range, which represents an interval, a set of values with a beginning and an end.
 my_number = 22
-
 case my_number
 when 1..20
   puts "Between 1 & 20"
@@ -55,7 +54,6 @@ else
   puts "Not within a valid range"
 end
 
-# In this case used Range, which represents an interval, a set of values with a beginning and an end.
 
 user = 'home office'
 case user
