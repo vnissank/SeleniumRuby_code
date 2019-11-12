@@ -50,7 +50,7 @@ months_hash = {'01' => 'January', '02' => 'February', '03' => 'March'}
 month = months_hash['01']
 puts month
 
-months_hash = {a1 => 'January', 2 => 'February', 3 => 'March'}
+months_hash = {1 => 'January', 2 => 'February', 3 => 'March'}
 month = months_hash[2]
 puts month
 
