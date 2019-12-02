@@ -87,10 +87,10 @@ puts "------------------------------ EXERCISES ---------------------------------
 #you can compare strings with the '==' operator, just like we can with numbers
 #assign two strings to variables and compare them with if statement
 
-# string1 = ""
-# string2 = ""
-# if()
-#  puts "strings are equal"
+# string1 = "kkk"
+# string2 = "nnnnn"
+# if(string1 == string2)
+#  puts "string #{string1} are equal to string #{string2}"
 # else
-#  puts "strings are not equal"
+#  puts "string \n #{string1} \n are not equal to \n #{string2}"
 # end

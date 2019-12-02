@@ -17,8 +17,8 @@ puts '__________________________________________________________________________
 # Exercise
 # Output header TEAM MEMBERS: using puts function with single quotes.
 # Using puts function output names and approximate age of the people in your team. Use tab and new line characters to format the text
-# puts 'TEAM MEMBERS:'
-# puts "\n Olga \t\t 45 \n Abbas \t\t 40 \n Sunder \t 35"
+#  puts 'TEAM MEMBERS:'
+#  puts "\n Olga \t\t 45 \n Abbas \t\t 40 \n Sunder \t 35"
 # ------------------------------------------------------------------------------------------------------
 # # run ruby code online
 # # https://paiza.io/en/languages/ruby

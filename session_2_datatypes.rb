@@ -14,7 +14,7 @@ puts sum
 puts 'decimals------------------'
 
 dec1 = 3.5
-dec2 = 4.20
+dec2 = 4.123
 sum = dec1 + dec2
 puts sum
 
@@ -69,6 +69,7 @@ object_inspect = str4.inspect
 puts object_class
 puts object_inspect
 
+puts"------------------------------------------------------"
 num4 = str4.to_i
 object_class = num4.class
 object_inspect = num4.inspect
@@ -79,7 +80,7 @@ puts num4 + 3
 dec4 = num4.to_f
 object_class = dec4.class
 object_inspect = dec4.inspect
-puts object_class
+puts object_class 
 puts object_inspect
 
 #-------------------------------Reference------------------------------------------------"
@@ -111,10 +112,10 @@ puts object_inspect
 puts "------------------------------ EXERCISES -----------------------------------------------"
 
 # Convert the number with floating decimal point to string and output the class and value
-# dec = 1234567.89
-# str = dec.to_s
-# str_class = str.class
-# puts "str value is #{str} and class is #{str_class}"
+#  dec = 1234567.89
+#  str = dec.to_s
+#  str_class =
+#  puts "str value is  and class is"
 
 # Create a hash "team_members" , use names as keys and age as values.
 # Get the age of one specific team member and output it.

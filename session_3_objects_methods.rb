@@ -53,9 +53,9 @@ puts "------------------------------ EXERCISES ---------------------------------
 #there is a string method called strip(), which returns a copy of str with leading and trailing whitespace removed
 #use strip() method to remove whitespoaces and print it using the above example
 
-# str = "  this is test string     "
-# clean_string =
-# puts "String after being stripped:"
+ # str = "  this is test string     "
+ # clean_string = str
+ # puts "String after being stripped:"
 
 # there is a string method called gsub(pattern, replacement), which returns a copy of str with the all occurrences of pattern substituted for the second argument
 # use the str variable to have a replacement and print it using the above example

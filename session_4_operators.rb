@@ -11,7 +11,7 @@ puts ("abbreviated assignment divide")
 puts x /= 4
 puts ("paralel assignment")
 l1, l2, l3 = "Python", "Ruby", "PHP"
-puts 11, 12, 13
+puts l1, l2, l3
 
 
 puts("Arithmetic operators------------------")
@@ -67,9 +67,9 @@ puts "------------------------------ EXERCISES ---------------------------------
 #you can compare strings with the '==' operator, just like we can with numbers
 #assign two strings to variables and compare them with if statement. Print out the boolean value of comparison
 
-# string1 = ""
-# string2 = ""
-# puts string1 == string2
+ # string1 = "Olg"
+ # string2 = "Olga"
+ # puts string1 == string2
 
 
 
