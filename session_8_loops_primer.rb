@@ -2,10 +2,10 @@
 # https://www.tutorialspoint.com/ruby/ruby_loops.htm
 #Loops in Ruby are used to execute the same block of code specified number of times.
 
-puts "-------------------GENERIC DO LOOP ----------------------------------------"
-3.times do |i|
-  puts "executing the loop with i: #{i}"
-end
+#puts "-------------------GENERIC DO LOOP ----------------------------------------"
+#3.times do |i|
+#  puts "executing the loop with i: #{i}"
+#end
 
 puts "-------------------Looping through the string of characters ----------------------------------------"
 
@@ -57,6 +57,7 @@ while x >= 0
 end
 
 puts "------------------------------ until loop -------------------------"
+x = 1
 until x < 0
   puts x
   x -= 1

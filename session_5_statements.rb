@@ -14,12 +14,6 @@ end
 
 a= 'black'
 b= 'white'
-if a == 'black' and b == 'white'
-  puts 'and condition met'
-else
-  puts 'and condition not met'
-end
-
 if a == 'black' && b == 'white'
   puts '&& condition met'
 else
@@ -28,7 +22,7 @@ end
 
 a= 'black'
 b= 'red'
-if a == 'black' or b == 'white'
+if a == 'black' || b == 'white'
   puts 'or condition met'
 else
   puts 'or condition not met'
@@ -42,18 +36,15 @@ else
   puts '|| condition not met'
 end
 
-puts "  ------------------------ CASE STATEMENT  --------------------------------------"
-# In this case used Range, which represents an interval, a set of values with a beginning and an end.
-my_number = 22
-case my_number
-when 1..20
-  puts "Between 1 & 20"
-when 21..40
-  puts "Between 21 & 40"
-else
-  puts "Not within a valid range"
-end
+#a= 'black'
+#b= 'red'
+#if a == 'black' or b == 'white'
+#  puts 'or condition met'
+#else
+#  puts 'or condition not met'
+#end
 
+puts "  ------------------------ CASE STATEMENT  --------------------------------------"
 
 user = 'home office'
 case user
@@ -66,6 +57,17 @@ when 'temporary'
 else
   puts "Not a valid user"
 end
+
+## In this case used Range, which represents an interval, a set of values with a beginning and an end.
+#my_number = 22
+#case my_number
+#when 1..20
+#  puts "Between 1 & 20"
+#when 21..40
+#  puts "Between 21 & 40"
+#else
+#  puts "Not within a valid range"
+#end
 
 puts "-------------------------------Reference------------------------------------------------"
 # Ruby operators :
@@ -87,7 +89,7 @@ puts "------------------------------ EXERCISES ---------------------------------
 #you can compare strings with the '==' operator, just like we can with numbers
 #assign two strings to variables and compare them with if statement
 
-# string1 = "kkk"
+# string1 = "kkkk"
 # string2 = "nnnnn"
 # if(string1 == string2)
 #  puts "string #{string1} are equal to string #{string2}"

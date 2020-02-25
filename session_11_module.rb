@@ -1,27 +1,25 @@
 
 module TestModule
-  def module_method
-    "module method called"
+  def module_method1
+    "module method 1 called"
   end
 
-  class SimpleClass
-    def initialize
-      puts 'initialize SimpleClass'
-    end
+  def module_method2
+    "module method 2 called"
   end
+
 end
 
 class TestClass
   include TestModule
 
   def test_self_method
-    str = self.module_method + " from TestClass instance"
-    puts str
+    str1 = self.module_method1 + " from TestClass instance"
+    str2 = self.module_method2 + " from TestClass instance"
+    puts str1, str2
   end
-
-  TestModule::SimpleClass.new
 
 end
 
 TestClass.new.test_self_method
-c=0
+

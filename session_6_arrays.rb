@@ -12,8 +12,8 @@ arr[0] = 1
 arr[1] = 2
 arr[2] = 3
 arr[3] = 4
-s = arr.size
-l = arr.length
+size = arr.size
+length = arr.length
 puts arr.inspect
 
 puts '------------------------Array of strings ------------------------------------------------------------------------'
@@ -46,12 +46,11 @@ puts names.inspect
 puts '-----------------------Remove nil elements and assign to new array -----------------------------------------------'
 new_names = names.compact
 puts new_names.inspect
-puts '-----------------------Change the original array -----------------------------------------------------------------'
-names_length = names.length
-names.compact!
-names_length = names.length
-puts names.inspect
-
+#puts '-----------------------Change the original array -----------------------------------------------------------------'
+#names_length = names.length
+#names.compact!
+#names_length = names.length
+#puts names.inspect
 puts '---------------------- Delete the element by value ---------------------------------------------------------------'
 new_names.delete('Peter')
 names_length = new_names.length
@@ -66,22 +65,24 @@ puts '-----------------------Delete the last element ---------------------------
 new_names.pop
 names_length = new_names.length
 puts new_names.inspect
-
-puts '---------------------Use block of code with Array.new -----------------------------------------------------------'
-changed_names = Array.new(names_length) { |e| names[e] = names[e]+'$' }
-puts changed_names.inspect
-
 puts '---------------------Iterate through array ----------------------------------------------------------------------'
-changed_names.each do |x|
-  puts x
-  x.delete!('$')
+new_names.each do |x|
+  x.downcase!
   puts x
 end
-puts changed_names.inspect
+puts new_names.inspect
+
+#puts '---------------------Use block of code with Array.new -----------------------------------------------------------'
+#changed_names = Array.new(names_length) { |e| names[e] = names[e]+'$' }
+#puts changed_names.inspect
+#
+#puts '---------------------Iterate through array ----------------------------------------------------------------------'
+#changed_names.each { |x| x.delete!('$') }
+#puts changed_names.inspect
 
 puts '------------------------------ MIXED ARRAY ----------------------------------------------------------------------'
 #in ruby arrays can hold values of different types
-mixed_arr = [1, 'some string', 3]
+mixed_arr = [1, 'some string', true]
 puts mixed_arr
 
 puts '------------------------------ ACCESSING ARRAY ELEMENTS ---------------------------------------------------------'
@@ -121,19 +122,17 @@ puts '------------------------------ EXERCISES ---------------------------------
 # Create an array and print out the first and last elements
 
 # my_array = Array[1,2,3,4,5,6,7]
-# first = my_array[0]
-# last = my_array[-1]
+# first =
+# last =
 # puts "The first value is: #{first}"
 # puts "The last value is: #{last}"
 
-# Exercise2.
-# Given the array of names with question marks at the end.
-#
-# names = Array['Peter?', 'Olga?', 'Sunder?', 'Len?']
-# # Remove question mark from each name using Array.new with block of code. Should be one line of code.
-#
-# Array.new(names.length) { |e| names[e] = names[e].delete!'?' }
-# puts names.inspect
-
-
+ #Exercise2.
+ #Given the array of names with question marks at the end.
+ #
+ #names = Array['Peter?', 'Olga?', 'Sunder?', 'Len?']
+ ## Remove question mark from each name using Array.new with block of code. Should be one line of code.
+ #
+ #Array.new(names.length) { |e| names[e] = names[e].delete!'?' }
+ #puts names.inspect
 

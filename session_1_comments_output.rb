@@ -8,11 +8,8 @@
 
 # Difference between double quotes and single quotes in outputting text, escape characters
 puts("This string has a double quote: \"text in quotes\". It is escaped")
-puts '____________________________________________________________________________'
 puts("Double-quote strings allow escaped characters such as \n for newline, \t for tab, etc.")
-puts '_____________________________________________________________________________'
 puts('Single-quote strings do not allow escaped characters such as \n for newline, \t for tab, etc.')
-puts '_____________________________________________________________________________'
 
 # Exercise
 # Output header TEAM MEMBERS: using puts function with single quotes.

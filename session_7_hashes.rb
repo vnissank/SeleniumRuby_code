@@ -41,9 +41,9 @@ puts hash_with_nil.inspect
 puts 'Remove nils and assign to new hash'
 compacted_hash = hash_with_nil.compact
 puts compacted_hash.inspect
-puts 'Change the original hash'
-hash_with_nil.compact!
-puts hash_with_nil.inspect
+#puts 'Change the original hash'
+#hash_with_nil.compact!
+#puts hash_with_nil.inspect
 
 
 puts '-------------------------------Reference------------------------------------------------'

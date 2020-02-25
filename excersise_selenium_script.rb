@@ -1,16 +1,23 @@
 require 'selenium-webdriver'
 
-Selenium::WebDriver::Chrome::Service.driver_path = './chromedriver.exe'
-prefs = {download: {prompt_for_download: false}}
-options = Selenium::WebDriver::Chrome::Options.new(args: ['start-maximized', 'user-data-dir=/tmp/temp_profile'])
-driver = Selenium::WebDriver.for(:chrome, options: options, prefs: prefs)
-url = 'https://www.massmutual.com'
-driver.get(url)
-Selenium::WebDriver::Wait.new(:timeout => 15)
+search_text = 'Ruby Selenium Webdriver'
 
-# Verify MassMutual page opened,
-# Click on College Savings link,
-# verify "How much do I need to save for college?" text ,
-# click Calculate button,
-# Verify the page "College Savings Calculator" displayed
-# close the browser
+Selenium::WebDriver::Chrome::Service.driver_path = './chromedriver.exe'
+driver = Selenium::WebDriver.for :chrome
+
+driver.get "https://www.bing.com"
+elem = driver.find_element(:name, 'q')
+elem.send_keys search_text                  #send_keys method used to write text
+elem.submit
+
+# Verify Page Header text
+actual_header = driver.title
+if actual_header.include?(search_text)
+  puts "Verified page header is '#{actual_header}'"
+else
+  fail "\nPage header '#{actual_header}' \n does not have expected '#{search_text}'"
+end
+puts 'Closed the browser'
+driver.quit
+
+
