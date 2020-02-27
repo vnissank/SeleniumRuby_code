@@ -12,6 +12,7 @@ elsif first_number == second_number
   puts "first number is equal to second number"
 end
 
+# AND
 a= 'black'
 b= 'white'
 if a == 'black' && b == 'white'
@@ -20,6 +21,7 @@ else
   puts '&& condition not met'
 end
 
+#OR
 a= 'black'
 b= 'red'
 if a == 'black' || b == 'white'
@@ -28,6 +30,7 @@ else
   puts 'or condition not met'
 end
 
+#OR
 a= 'green'
 b= 'red'
 if a == 'black' || b == 'white'
@@ -36,13 +39,6 @@ else
   puts '|| condition not met'
 end
 
-#a= 'black'
-#b= 'red'
-#if a == 'black' or b == 'white'
-#  puts 'or condition met'
-#else
-#  puts 'or condition not met'
-#end
 
 puts "  ------------------------ CASE STATEMENT  --------------------------------------"
 
@@ -57,17 +53,6 @@ when 'temporary'
 else
   puts "Not a valid user"
 end
-
-## In this case used Range, which represents an interval, a set of values with a beginning and an end.
-#my_number = 22
-#case my_number
-#when 1..20
-#  puts "Between 1 & 20"
-#when 21..40
-#  puts "Between 21 & 40"
-#else
-#  puts "Not within a valid range"
-#end
 
 puts "-------------------------------Reference------------------------------------------------"
 # Ruby operators :
@@ -91,7 +76,7 @@ puts "------------------------------ EXERCISES ---------------------------------
 
 # string1 = "kkkk"
 # string2 = "nnnnn"
-# if(string1 == string2)
+# if string1 == string2
 #  puts "string #{string1} are equal to string #{string2}"
 # else
 #  puts "string \n #{string1} \n are not equal to \n #{string2}"

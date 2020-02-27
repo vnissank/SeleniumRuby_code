@@ -44,22 +44,12 @@ puts arr
 puts arr.inspect
 puts arr[1]
 
-puts 'Hashes---------'
+puts 'Hashes------------------'
 #A Hash is a collection of key-value pairs. Keys should be unique
 months_hash = {'01' => 'January', '02' => 'February', '03' => 'March'}
 month = months_hash['01']
 puts month
 
-months_hash = {1 => 'January', 2 => 'February', 3 => 'March'}
-month = months_hash[2]
-puts month
-
-#puts 'Symbols---------'
-## Symbols are used to represent other objects. Several objects also have to_sym methods. These methods convert those objects to symbols.
-## Ruby symbols are often used as hash keys, because we do not need full capabilities of a string objects for a key.
-#months_hash = {:january => '01', :february => '02', :march => '03'}
-#month = months_hash[:march]
-#puts month
 
 puts "------------------------------ CONVERSION OF TYPES -----------------------------------------"
 
@@ -77,11 +67,6 @@ puts object_class
 puts object_inspect
 puts num4 + 3
 
-#dec4 = num4.to_f
-#object_class = dec4.class
-#object_inspect = dec4.inspect
-#puts object_class
-#puts object_inspect
 
 #-------------------------------Reference------------------------------------------------"
 

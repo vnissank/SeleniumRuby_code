@@ -46,11 +46,7 @@ puts names.inspect
 puts '-----------------------Remove nil elements and assign to new array -----------------------------------------------'
 new_names = names.compact
 puts new_names.inspect
-#puts '-----------------------Change the original array -----------------------------------------------------------------'
-#names_length = names.length
-#names.compact!
-#names_length = names.length
-#puts names.inspect
+
 puts '---------------------- Delete the element by value ---------------------------------------------------------------'
 new_names.delete('Peter')
 names_length = new_names.length
@@ -71,14 +67,6 @@ new_names.each do |x|
   puts x
 end
 puts new_names.inspect
-
-#puts '---------------------Use block of code with Array.new -----------------------------------------------------------'
-#changed_names = Array.new(names_length) { |e| names[e] = names[e]+'$' }
-#puts changed_names.inspect
-#
-#puts '---------------------Iterate through array ----------------------------------------------------------------------'
-#changed_names.each { |x| x.delete!('$') }
-#puts changed_names.inspect
 
 puts '------------------------------ MIXED ARRAY ----------------------------------------------------------------------'
 #in ruby arrays can hold values of different types

@@ -15,16 +15,6 @@ search_string = 'all'
 flag = lower_case.include?(search_string)
 puts "The string '#{search_string}' exists in string '#{lower_case}' - #{flag}"
 
-#puts 'Split the string into array ---------------------------'
-#arr_str = lower_case.split
-#puts arr_str
-#puts "The second word in '#{lower_case}' is '#{arr_str[1]}'"
-#
-#puts'Format the string to include the value with 2 decimals ----------------------------------------'
-#price = 78.5431
-#puts "The price is %0.2f dollars" % [price]
-#your_price = "$%0.2f" % [price]
-#puts your_price
 
 #-------------------------------Reference------------------------------------------------"
 

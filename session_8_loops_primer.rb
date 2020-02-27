@@ -2,10 +2,6 @@
 # https://www.tutorialspoint.com/ruby/ruby_loops.htm
 #Loops in Ruby are used to execute the same block of code specified number of times.
 
-#puts "-------------------GENERIC DO LOOP ----------------------------------------"
-#3.times do |i|
-#  puts "executing the loop with i: #{i}"
-#end
 
 puts "-------------------Looping through the string of characters ----------------------------------------"
 
@@ -19,10 +15,7 @@ str.each_char do |x|
 end
 
 puts "------------------------------ Iterate through array -------------------------"
-
-#https://www.tutorialspoint.com/ruby/ruby_arrays.htm
-#This will iterate through all the elements:
-#
+#Create an array
 array = [1, 2, 3, 4, 5, 6]
 
 puts "Print values with Do loop -----------------------------------------------------------"
@@ -77,5 +70,17 @@ puts "-------------------------------Reference----------------------------------
 
 puts "------------------------------ Exercises -------------------------"
 
-#Create an array of numbers 10 to 20.
+#Create an array of numbers 15 to 20.
 # Use the loop of any kind to output the value of each element and break the loop if the value equals to 18
+#
+#array = [15, 16, 17, 18, 19, 20]
+#array.each do |x|
+#  puts x
+#break if x == 18
+#end
+#
+#x = 0
+#while array[x] <= 18
+#  puts array[x]
+#  x += 1
+#end
