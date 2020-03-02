@@ -10,6 +10,9 @@ rescue StandardError => e
   puts e.backtrace.inspect
 end
 puts "The sum of num1 and num2 is #{num1.to_i + num2.to_i}"
+# Exceptions:
+# https://www.tutorialspoint.com/ruby/ruby_exceptions.htm
+# https://www.honeybadger.io/blog/ruby-exception-vs-standarderror-whats-the-difference/
 
 puts 'Create function that returns 2 values --------------------------------------------------'
 def find_person(name, country_hash, age_hash)

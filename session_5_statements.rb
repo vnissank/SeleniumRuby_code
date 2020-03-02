@@ -5,16 +5,16 @@ second_number = 9
 #we can use an if statement to control the flow of the application with values
 #the inner blocks of code in the if statement only happens if the condition applies
 if first_number > second_number
-  puts "first number is greater than second number"
+  puts 'first number is greater than second number'
 elsif first_number < second_number
-  puts "first number is less than second number"
+  puts 'first number is less than second number'
 elsif first_number == second_number
-  puts "first number is equal to second number"
+  puts 'first number is equal to second number'
 end
 
 # AND
-a= 'black'
-b= 'white'
+a = 'black'
+b = 'white'
 if a == 'black' && b == 'white'
   puts '&& condition met'
 else
@@ -22,8 +22,8 @@ else
 end
 
 #OR
-a= 'black'
-b= 'red'
+a = 'black'
+b = 'red'
 if a == 'black' || b == 'white'
   puts 'or condition met'
 else
@@ -31,8 +31,8 @@ else
 end
 
 #OR
-a= 'green'
-b= 'red'
+a = 'green'
+b = 'red'
 if a == 'black' || b == 'white'
   puts '|| condition met'
 else
@@ -55,11 +55,7 @@ else
 end
 
 puts "-------------------------------Reference------------------------------------------------"
-# Ruby operators :
-# https://www.tutorialspoint.com/ruby/ruby_operators.htm
-# https://www.w3resource.com/ruby/ruby-operators-precedence.php
-# https://www.rubyguides.com/2018/07/ruby-operators/
-#
+
 # ruby if/else statements:
 # https://www.tutorialspoint.com/ruby/ruby_if_else.htm
 # https://launchschool.com/books/ruby/read/flow_control#conditionals

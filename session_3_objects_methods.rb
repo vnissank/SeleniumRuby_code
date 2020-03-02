@@ -30,10 +30,6 @@ puts "The string '#{search_string}' exists in string '#{lower_case}' - #{flag}"
 
 #Strings formatting:
 #https://www.rubyguides.com/2012/01/ruby-string-formatting/
-#
-# Exceptions:
-# https://www.tutorialspoint.com/ruby/ruby_exceptions.htm
-# https://www.honeybadger.io/blog/ruby-exception-vs-standarderror-whats-the-difference/
 
 # run ruby code online
 # https://paiza.io/en/languages/ruby

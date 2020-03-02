@@ -8,8 +8,7 @@ driver = Selenium::WebDriver.for :chrome
 driver.get "https://www.bing.com"
 elem = driver.find_element(:name, 'q')
 elem.send_keys search_text                  #send_keys method used to write text
-elem.submit
-
+elem.send_keys :enter
 # Verify Page Header text
 actual_header = driver.title
 if actual_header.include?(search_text)

@@ -67,8 +67,8 @@ puts "------------------------------ EXERCISES ---------------------------------
 #you can compare strings with the '==' operator, just like we did with numbers
 #assign two strings to variables and compare them with if statement. Print out the boolean value of comparison
 
- # string1 = "String1"
- # string2 = "String2"
+ # string1 = 'String1'
+ # string2 = 'String2'
  # puts string1 == string2
 
 
