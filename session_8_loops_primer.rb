@@ -2,6 +2,11 @@
 # https://www.tutorialspoint.com/ruby/ruby_loops.htm
 #Loops in Ruby are used to execute the same block of code specified number of times.
 
+puts "-------------------GENERIC DO LOOP ----------------------------------------"
+3.times do |i|
+  puts "executing the loop with i: #{i}"
+end
+
 
 puts "-------------------Looping through the string of characters ----------------------------------------"
 
@@ -73,14 +78,6 @@ puts "------------------------------ Exercises -------------------------"
 #Create an array of numbers 15 to 20.
 # Use the loop of any kind to output the value of each element and break the loop if the value equals to 18
 #
-#array = [15, 16, 17, 18, 19, 20]
-#array.each do |x|
-#  puts x
-#break if x == 18
-#end
+#your code here
 #
-#x = 0
-#while array[x] <= 18
-#  puts array[x]
-#  x += 1
-#end
+#

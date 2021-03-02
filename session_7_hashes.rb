@@ -42,6 +42,10 @@ puts 'Remove nils and assign to new hash'
 compacted_hash = hash_with_nil.compact
 puts compacted_hash.inspect
 
+puts 'Change the original hash'
+hash_with_nil.compact!
+puts hash_with_nil.inspect
+
 
 puts '-------------------------------Reference------------------------------------------------'
 
@@ -62,8 +66,7 @@ puts '------------------------------ EXERCISES ---------------------------------
 # output the value for 'dos' key
 #
 # my_hash = { :one => 'uno', :two => 'dos', :three => 'tres' }
-# new_hash =
-# puts "the value for 'dos' key is #{}"
+# your code here
 
 
 

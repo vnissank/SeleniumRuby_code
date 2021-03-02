@@ -83,17 +83,4 @@ puts '-------------------------------Reference----------------------------------
 # Create a new instance of FirstClass  by calling the new method, pass the name
 # call the print_greeting method on the object
 #
-# class FirstClass
-#
-#   def initialize(name)
-#     @name = name
-#   end
-#
-#   def print_greeting
-#     puts "Hello #{@name}!"
-#   end
-# end
-#
-# my_object = FirstClass.new('World') # try with Hello World
-#
-# my_object.print_greeting
+#your code here

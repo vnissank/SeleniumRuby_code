@@ -48,6 +48,17 @@ puts 'Hashes------------------'
 #A Hash is a collection of key-value pairs. Keys should be unique
 months_hash = {'01' => 'January', '02' => 'February', '03' => 'March'}
 month = months_hash['01']
+puts month 
+
+months_hash = {1 => 'January', 2 => 'February', 3 => 'March'}
+month = months_hash[2]
+puts month
+
+puts 'Symbols---------'
+# Symbols are used to represent other objects. Several objects also have to_sym methods. These methods convert those objects to symbols.
+# Ruby symbols are often used as hash keys, because we do not need full capabilities of a string objects for a key.
+months_hash = {:january => '01', :february => '02', :march => '03'}
+month = months_hash[:march]
 puts month
 
 
@@ -98,13 +109,9 @@ puts "------------------------------ EXERCISES ---------------------------------
 
 # Convert the number with floating decimal point to string and output the class and value
 #  dec = 1234567.89
-#  str = dec.to_s
-#  str_class =
-#  puts
+#  your code here
 
 # Create a hash "team_members" , use names as keys and age as values.
 # Get the age of one specific team member and output it.
-# team_members = {'Olga' => '45', 'Abbas' => '40', 'Sunder' => '35'}
-# olga_age = team_members['Olga']
-# puts olga_age
+# your code here
 

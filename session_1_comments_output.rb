@@ -12,10 +12,10 @@ puts("Double-quote strings allow escaped characters such as \n for newline, \t f
 puts('Single-quote strings do not allow escaped characters such as \n for newline, \t for tab, etc.')
 
 # Exercise
-# Output header TEAM MEMBERS: using puts function with single quotes.
+# Output header "TEAM MEMBERS:"" using puts function with single quotes.
 # Using puts function output names and approximate age of the people in your team. Use tab and new line characters to format the text
-#  puts 'TEAM MEMBERS:'
-#  puts "\n Olga \t\t 45 \n Abbas \t\t 40 \n Sunder \t 35"
+# your code here
+
 # ------------------------------------------------------------------------------------------------------
 # # run ruby code online
 # # https://paiza.io/en/languages/ruby

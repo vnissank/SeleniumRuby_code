@@ -54,6 +54,17 @@ else
   puts "Not a valid user"
 end
 
+# In this case used Range, which represents an interval, a set of values with a beginning and an end.
+my_number = 22
+case my_number
+when 1..20
+  puts "Between 1 & 20"
+when 21..40
+  puts "Between 21 & 40"
+else
+  puts "Not within a valid range"
+end
+
 puts "-------------------------------Reference------------------------------------------------"
 
 # ruby if/else statements:
@@ -70,10 +81,4 @@ puts "------------------------------ EXERCISES ---------------------------------
 #you can compare strings with the '==' operator, just like we can with numbers
 #assign two strings to variables and compare them with if statement
 
-# string1 = "kkkk"
-# string2 = "nnnnn"
-# if string1 == string2
-#  puts "string #{string1} are equal to string #{string2}"
-# else
-#  puts "string \n #{string1} \n are not equal to \n #{string2}"
-# end
+# you code here
