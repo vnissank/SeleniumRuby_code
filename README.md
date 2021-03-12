@@ -8,4 +8,5 @@
 >>   Go through each session - from session_1 to session_12. 
 >>>   Do exercise at the end of each file.
 >5. Push your code to your branch ruby_training_your_name
->6. Let us know that you done
+>6. Make a Pull Request, adding Olga and Abbas as reviewers.
+>6. Let us know that you done.
