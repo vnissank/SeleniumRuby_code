@@ -65,7 +65,7 @@ puts "-------------------------------Reference----------------------------------
 
 puts "------------------------------ EXERCISES ----------------------------------------------"
 #you can compare strings with the '==' operator, just like we did with numbers
-#assign two strings to variables and compare them with if statement. Print out the boolean value of comparison
+#assign two strings to variables and print out the boolean value of their comparison
 
  # your code here
 
