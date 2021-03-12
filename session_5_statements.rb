@@ -79,6 +79,6 @@ puts "-------------------------------Reference----------------------------------
 
 puts "------------------------------ EXERCISES ----------------------------------------------"
 #you can compare strings with the '==' operator, just like we can with numbers
-#assign two strings to variables and compare them with if statement
+#assign tree strings to variables and compare them with if statement, printing out meaningful messages
 
 # you code here
