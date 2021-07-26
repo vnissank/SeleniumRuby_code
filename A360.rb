@@ -1,5 +1,5 @@
 require 'selenium-webdriver'
-require './Signin.rb'
+require './A360Signin.rb'
 
 Selenium::WebDriver::Chrome::Service.driver_path = './chromedriver.exe'
 $driver = Selenium::WebDriver.for :chrome
@@ -13,7 +13,9 @@ end
 
 obj = A360.new
 obj.invokeApplication
-obj.login("MM01073","2tL23XdWd8")
+userId = gets.chomp
+pwd = gets.chomp
+obj.login(userId,pwd)
 obj.impersonation("Colin Kimpel")
 obj.hhsearch("ABBOTT, AMY")
 

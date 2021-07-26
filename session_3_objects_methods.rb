@@ -58,3 +58,11 @@ puts "------------------------------ EXERCISES ---------------------------------
 
 # str = "this is test string to test a string"
 # your code here
+str = "    I am the Legend    "
+puts str
+s1 = str.split
+puts s1
+s2 = str.strip
+puts s2
+s3 = str.gsub("I","Mani")
+puts s3

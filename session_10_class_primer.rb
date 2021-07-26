@@ -84,3 +84,12 @@ puts '-------------------------------Reference----------------------------------
 # call the print_greeting method on the object
 #
 #your code here
+class FirstClass 
+  def greeting(name)
+    @name = name
+    puts "Welcome #@name" 
+  end
+
+end
+obj = FirstClass.new
+obj.greeting("Mani")

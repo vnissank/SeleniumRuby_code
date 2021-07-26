@@ -82,3 +82,13 @@ puts "------------------------------ EXERCISES ---------------------------------
 #assign tree strings to variables and compare them with if statement, printing out meaningful messages
 
 # you code here
+
+if inp_str == str1
+  puts " This is Mani's Certificate Name"
+elsif inp_str == str2
+  puts "This is calling Name "
+elsif inp_str == str3
+  puts "Mani's Nick name "
+else 
+  puts "Not a valid input"
+end

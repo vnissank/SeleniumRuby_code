@@ -70,7 +70,9 @@ puts "------------------------------ EXERCISES ---------------------------------
  # your code here
 
 
-
+ str1 = "Manikantha"
+ str2 = "Manikanta"
+ puts str1 == str2
 
 
 

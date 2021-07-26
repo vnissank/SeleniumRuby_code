@@ -81,3 +81,21 @@ puts "------------------------------ Exercises -------------------------"
 #your code here
 #
 #
+array = [15,16,17,18,19,16,20]
+array.each do |i|
+    puts i
+end
+counter = 0
+for i in 0..array.size-1
+    puts "This is array: #{array[i]}"
+    for j in i+1..array.size-1
+        puts "this is array2:#{array[j]}"
+        if array[i] == array[j]
+            puts "Elements are equal" 
+            counter = counter+1
+            break                  
+        end  
+            
+    end
+    break if counter == 1
+end

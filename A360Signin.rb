@@ -28,10 +28,26 @@ module Signin
         pwd_box = $driver.find_element(:class => 'password-with-toggle')
         pwd_box.send_keys pass_word
         pwd_box.send_keys :enter
-        sleep 5
+        sleep 10
+        parent_window = $driver.window_handle
         a360_preprod_img = $driver.find_element(:xpath => "//a[@href='https://massmutual.oktapreview.com/home/bookmark/0oanq46dpy6CZiOrv0h7/1280?fromHome=true']")
         a360_preprod_img.click
         sleep 10
+        windowswitch(parent_window)
+    end
+
+    def windowswitch(actual)
+        actual_window = actual
+        puts actual_window
+        handles = $driver.window_handles
+        handles.each do |handle|
+            puts handle
+            if handle != actual_window
+                $driver.switch_to.window handle
+                puts $driver.title
+            end
+            sleep 5
+        end
     end
 
 end
@@ -39,8 +55,9 @@ end
 module Dashboard
     def impersonation(adv)
         advisor = adv
-        impersonate = $driver.find_element(:class, 'ng-tns-c24-7 ui-inputtext ui-widget ui-state-default ui-corner-all ui-autocomplete-input ng-star-inserted')
+        impersonate = $driver.find_element(:xpath => "//input[@placeholder = 'Impersonate']")
         impersonate.send_keys advisor
+        sleep 5
         impersonate_select = $driver.find_element(:xpath => "//p[text()=' COLIN W KIMPEL ']")
         impersonate_select.click
         sleep 5        
@@ -49,16 +66,11 @@ module Dashboard
         house_hold = hh
         hhsearch_field = $driver.find_element(:xpath => "//input[@placeholder ='COLIN, click here for last 10 or type name, account, or policy/contract']")
         hhsearch_field.send_keys house_hold
+        sleep 5
         hhresult = $driver.find_element(:xpath => "//span[@class=' household']/button")
         hhresult.click
         sleep 10
-        page_expected = "ABBOTT, AMY - Client360"
-        navigated_page = $driver.title
-        if page_expected == navigated_page
-            puts " Navigated to C360 of HH: #{house_hold}"
-        else
-            puts " Incorrect page"
-        end
+        puts "Household clicked and C360 opened"
     end
 end
 

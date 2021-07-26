@@ -124,10 +124,23 @@ puts '------------------------------ EXERCISES ---------------------------------
 # Create an array and print out the first and last elements
 
 # your code here
+#creating an array
+arr = Array.new(10)
+for i in 0...10
+    arr[i] = gets.chomp
+end
+puts arr.inspect
+
+# printing first and last elements
+puts arr[-1]
+puts arr[0]
 
  #Exercise2.
  #Given the array of names with question marks at the end.
  #names = Array['Peter?', 'Olga?', 'Sunder?', 'Len?']
  # Remove question mark from each name using Array.new with block of code. Should be one line of code.
  #your code here
+names = Array['Peter?', 'Olga?', 'Sunder?', 'Len?']
+names.each {|i| i.delete!('?')}
+puts names.inspect
 

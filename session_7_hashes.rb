@@ -68,6 +68,11 @@ puts '------------------------------ EXERCISES ---------------------------------
 # my_hash = { :one => 'uno', :two => 'dos', :three => 'tres' }
 # your code here
 
+my_hash = { :one => 'uno', :two => 'dos', :three => 'tres' }
+new_hash = my_hash.invert
+puts new_hash.inspect
+puts new_hash["dos"]
+
 
 
 

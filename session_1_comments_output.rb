@@ -16,6 +16,10 @@ puts('Single-quote strings do not allow escaped characters such as \n for newlin
 # Using puts function output names and approximate age of the people in your team. Use tab and new line characters to format the text
 # your code here
 
+puts 'TEAM MEMBERS:'
+puts "Manikanta\t28\nSoujanya\t30\nRavi\t31\nSmruti\t28"
+
+
 # ------------------------------------------------------------------------------------------------------
 # # run ruby code online
 # # https://paiza.io/en/languages/ruby

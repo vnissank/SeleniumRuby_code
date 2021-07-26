@@ -61,5 +61,16 @@ puts "------------------------------ EXERCISES ---------------------------------
 #given that a and b are numbers
 # your code here
 
+def numbers_add(num1,num2)
+  first_number = num1
+  second_number = num2
+  added_number = first_number + second_number
+  puts added_number
+  return added_number
+end
+
 #2. now call the functions a few times with different inputs
 # your code here
+summation = numbers_add(10,20)
+puts summation.inspect
+

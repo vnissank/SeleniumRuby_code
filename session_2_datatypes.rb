@@ -110,8 +110,18 @@ puts "------------------------------ EXERCISES ---------------------------------
 # Convert the number with floating decimal point to string and output the class and value
 #  dec = 1234567.89
 #  your code here
+dec_num = 1234567.89
+puts dec_num.class
+conv = dec_num.to_s
+puts conv.class
+puts conv.inspect
+
+
+
 
 # Create a hash "team_members" , use names as keys and age as values.
 # Get the age of one specific team member and output it.
 # your code here
-
+ team_members = {'Mani'=>28,'Soujanya'=>31,'Ravi'=>32,'Smruthi'=>29}
+ first_member = team_members['Mani']
+ puts first_member
